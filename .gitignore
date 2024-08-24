@@ -1,0 +1,26 @@
+# Ignore compiled files (e.g., .class, .pyc, .o)
+*.class
+*.pyc
+*.o
+
+# Ignore build output directories
+node_modules/
+dist/
+build/
+out/
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore system and temporary files
+.DS_Store
+Thumbs.db
+*.swp
+
+# Ignore sensitive or environment-specific files
+.env
+config.js
+
+# Ignore log files
+*.log

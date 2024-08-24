@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="angularModule">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- Custom CSS Stylesheets -->
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <!-- Include AngularJS -->
+    <script src="./src/js/angular.min.js"></script>
+    <script src="./src/js/angualrRoutes.js"></script>
+  </head>
+  <body ng-controller="controller">
+    <!-- Navigation -->
+    <nav
+      class="px-3 py-3 mx-auto lg:flex lg:items-center lg:justify-between"
+    >
+      <div class="flex items-center justify-between">
+        <div class="px-3">
+          <a href="#" class="text-2xl"
+            ><span>Port<span>Folio</span></span></a
+          >
+        </div>
+        <div class="lg:hidden w-6 h-6">
+          <img
+            id="navbarBtn"
+            src="./src/assets/menu-3-line.svg"
+            alt="Nav Btn"
+          />
+        </div>
+      </div>
+      <ul
+        id="navItems"
+        class="px-3 py-2 text-center hidden lg:flex lg:items-center lg:justify-between lg:gap-4"
+      >
+        <!-- Dynamic navigation items -->
+        <li ng-repeat="navItem in navItems" class="text-6xl lg:text-xl my-2">
+          <a href="{{navItem.to}}">{{navItem.label}}</a>
+        </li>
+        <li class="lg:hidden">
+          <button
+            class="px-2 py-1 my-2 lg:py-0.5 text-2xl lg:text-xl cta rounded-md uppercase"
+          >
+            Contact
+          </button>
+        </li>
+      </ul>
+      <div class="hidden lg:inline-block">
+        <button
+          class="px-2 py-1 my-2 text-2xl lg:text-lg cta uppercase rounded-md"
+        >
+          Contact
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main content (use ng-view for routing) -->
+    <main ng-view></main>
+
+    <!-- Footer -->
+    <footer>
+      <ul>
+        <div>Follow us on</div>
+        <li ng-repeat="socialLink in socialLinks" class="my-2">
+          <a href="{{socialLink.to}}" class="flex items-center gap-2"
+            ><img
+              src="{{socialLink.icon}}"
+              class="w-6 h-6"
+              alt="{{socialLink.alt}}"
+            />
+            <span class="text-xl">{{socialLink.label}}</span>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <!-- Include other scripts -->
+    <script src="./src/js/index.js"></script>
+    <script src="./src/js/angularScript.js"></script>
+  </body>
+</html>

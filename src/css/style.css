@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --night: #0a090cff;
+  --white: #ffffff;
+  --antiflash-white: #f0edeeff;
+  --midnight-green: #07393cff;
+  --caribbean-current: #2c666eff;
+  --non-photo-blue: #90ddf0ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter Tight", sans-serif;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#navItems.slide-up {
+  animation: slide-up 0.5s ease-in-out forwards;
+}
+
+nav, .hero-section {
+  background-color: var(--antiflash-white);
+}
+
+.cta {
+  background-color: var(--caribbean-current);
+  color: var(--white);
+
+  &:hover {
+    background-color: var(--midnight-green);
+  }
+}
