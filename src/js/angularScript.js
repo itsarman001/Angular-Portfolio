@@ -3,7 +3,7 @@ app.controller("controller", function ($scope) {
   $scope.navItems = [
     {
       label: "Home",
-      to: "#!Main",
+      to: "#",
     },
     {
       label: "Service",
@@ -24,26 +24,78 @@ app.controller("controller", function ($scope) {
       label: "LinkedIn",
       icon: "./src/assets/social-links/linkedin-box-fill.svg",
       to: "",
-      alt: "LinkedIn"
-      
+      alt: "LinkedIn",
     },
     {
       label: "Twitter",
       icon: "./src/assets/social-links/twitter-x-fill.svg",
       to: "",
-      alt: "Twitter"
+      alt: "Twitter",
     },
     {
       label: "Github",
       icon: "./src/assets/social-links/github-fill.svg",
       to: "",
-      alt: "Github"
+      alt: "Github",
     },
     {
       label: "Codepen",
       icon: "./src/assets/social-links/codepen-fill.svg",
       to: "",
-      alt: "Codepen"
+      alt: "Codepen",
+    },
+  ];
+
+  $scope.techStacks = [
+    {
+      label: "Html",
+      icon: "./src/assets/tech-stack/html5-fill.svg",
+      alt: "Html",
+    },
+    {
+      label: "Css",
+      icon: "./src/assets/tech-stack/css3-fill.svg",
+      alt: "Css",
+    },
+    {
+      label: "Javascript",
+      icon: "./src/assets/tech-stack/javascript-fill.svg",
+      alt: "Javascript",
+    },
+    {
+      label: "Tailwind Css",
+      icon: "./src/assets/tech-stack/tailwind-css-fill.svg",
+      alt: "Tailwind Css",
+    },
+    {
+      label: "Bootstrap",
+      icon: "./src/assets/tech-stack/bootstrap-fill.svg",
+      alt: "Bootstrap",
+    },
+    {
+      label: "Jquery",
+      icon: "./src/assets/tech-stack/jquery-fill.svg",
+      alt: "Jquery",
+    },
+    {
+      label: "React",
+      icon: "./src/assets/tech-stack/reactjs-fill.svg",
+      alt: "React"
+    },
+    {
+      label: "Angular",
+      icon: "./src/assets/tech-stack/angularjs-fill.svg",
+      alt: "Angular"
+    },
+    {
+      label: "Sql",
+      icon: "./src/assets/tech-stack/sql-fill.svg",
+      alt: "Sql"
+    },
+    {
+      label: "Php",
+      icon: "./src/assets/tech-stack/php-fill.svg",
+      alt: "Php"
     },
   ];
 });
