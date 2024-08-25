@@ -80,23 +80,47 @@ app.controller("controller", function ($scope) {
     {
       label: "React",
       icon: "./src/assets/tech-stack/reactjs-fill.svg",
-      alt: "React"
+      alt: "React",
     },
     {
       label: "Angular",
       icon: "./src/assets/tech-stack/angularjs-fill.svg",
-      alt: "Angular"
+      alt: "Angular",
     },
     {
       label: "Sql",
       icon: "./src/assets/tech-stack/sql-fill.svg",
-      alt: "Sql"
+      alt: "Sql",
     },
     {
       label: "Php",
       icon: "./src/assets/tech-stack/php-fill.svg",
-      alt: "Php"
+      alt: "Php",
     },
+  ];
+
+  $scope.projects = [
+    {
+      label: "Notion Clone",
+      categories: ["Web App", "Productivity", "Note Taking"],
+      link: "#",
+      previews: [
+        {
+          src: "./src/assets/projects/notion/Notion.jpg",
+          alt: "Notion Hero Section",
+        },
+        {
+          src: "./src/assets/projects/notion/NotionSignup.jpg",
+          alt: "Notion Signup Page",
+        },
+
+        {
+          src: "./src/assets/projects/notion/NotionTemplate.jpg",
+          alt: "Template Section",
+        },
+      ],
+    },
+    
   ];
 });
 

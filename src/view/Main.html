@@ -21,31 +21,26 @@
     <section>
       <ul class="space-y-2">
         <!-- Each Project -->
-        <li class="accordian-bg px-3 py-4 rounded-md">
+        <li class="accordian-bg px-3 py-4 rounded-md" ng-repeat="project in projects">
           <div
-            class="flex items-center justify-between flex-wrap gap-2 px-2 mb-4"
+            class="flex items-center justify-between  flex-wrap gap-2 px-2 mb-4"
           >
             <!-- Project Title -->
             <div class="my-2">
-              <h3 class="text-4xl">Notion Note Taking App</h3>
+              <h3 class="text-4xl">{{project.label}}</h3>
             </div>
 
             <!-- Project Categoires -->
-            <div class="flex items-center flex-wrap">
-              <span class="px-3 py-1 accordian-categories cursor-pointer rounded-md me-2"
-                >Web App
-              </span>
-              <span class="px-3 py-1 accordian-categories cursor-pointer rounded-md me-2"
-                >Productivity
-              </span>
-              <span class="px-3 py-1 accordian-categories cursor-pointer rounded-md me-2"
-                >Note Taking</span
-              >
-            </div>
+            <ul class="flex items-center justify-between flex-wrap gap-3" >
+              <li ng-repeat="categorie in project.categories" class="px-3 py-1 accordian-categories cursor-pointer rounded-md"
+                >{{categorie}}
+              </li>
+              
+            </ul>
             <!-- Project Live Link -->
             <div>
               <button
-                href="#"
+                href="{{project.link}}"
                 class="m-2 accordian-btn px-3 py-1 rounded-md uppercase"
               >
                 Live Preview
@@ -57,20 +52,12 @@
             class="w-full flex items-center justify-start overflow-x-auto gap-4"
           >
             <img
+            ng-repeat="preview in project.previews"
               class="w-80 h-56"
-              src="./src/assets/projects/notion/Notion.jpg"
-              alt="Project Notion"
+              src="{{preview.src}}"
+              alt="{{preview.alt}}"
             />
-            <img
-              class="w-80 h-56"
-              src="./src/assets/projects/notion/NotionSignup.jpg"
-              alt="Notion"
-            />
-            <img
-              class="w-80 h-56"
-              src="./src/assets/projects/notion/NotionTemplate.jpg"
-              alt="Notion"
-            />
+            
           </div>
         </li>
       </ul>
