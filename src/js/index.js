@@ -10,3 +10,5 @@ function toggleNavbar() {
 }
 
 document.getElementById("navbarBtn").addEventListener("click", toggleNavbar);
+
+

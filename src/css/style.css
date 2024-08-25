@@ -31,7 +31,8 @@
   animation: slide-up 0.5s ease-in-out forwards;
 }
 
-nav, .hero-section {
+nav,
+.hero-section {
   background-color: var(--antiflash-white);
 }
 
@@ -41,5 +42,29 @@ nav, .hero-section {
 
   &:hover {
     background-color: var(--midnight-green);
+  }
+}
+
+/* BG COLOR */
+.accordian-bg {
+  background-color: var(--antiflash-white);
+}
+
+.accordian-categories {
+  background-color: var(--caribbean-current);
+  color: white;
+  transition: ease 0.3s;
+  &:hover {
+    background-color: var(--midnight-green);
+    
+  }
+}
+
+.accordian-btn {
+  background-color: var(--midnight-green);
+  color: white;
+  transition: ease 0.3s;
+  &:hover {
+    background-color: var(--night);
   }
 }
