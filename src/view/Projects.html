@@ -6,6 +6,58 @@
     <title>Document</title>
 </head>
 <body>
-    Projexts
+    <section>
+        <div class="mb-5 px-5 lg:py-24">
+            <h1 class=" text-6xl lg:text-8xl mb-4 text-center">Projects</h1>
+            <p class="text-[5vw] lg:text-[2vw]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iusto quod animi placeat voluptatibus eaque maiores voluptate blanditiis, quibusdam nisi distinctio omnis! Nobis!</p>
+        </div>
+        <div class="px-5 lg:px-24 my-10">
+            <ul class="space-y-2">
+              <!-- Each Project -->
+              <li class="accordian-bg px-3 py-4 rounded-md" ng-repeat="project in projects">
+                <div
+                  class="flex items-center justify-between  flex-wrap gap-2 px-2 mb-4"
+                >
+                  <!-- Project Title -->
+                  <div class="my-2">
+                    <h3 class="text-4xl">{{project.label}}</h3>
+                  </div>
+      
+                  <!-- Project Categoires -->
+                  <ul class="flex items-center justify-between flex-wrap gap-3" >
+                    <li ng-repeat="categorie in project.categories" class="px-3 py-1 accordian-categories cursor-pointer rounded-md"
+                      >{{categorie}}
+                    </li>
+                    
+                  </ul>
+                  <!-- Project Live Link -->
+                  <div>
+                    <button
+                      href="{{project.link}}"
+                      class="m-2 accordian-btn px-3 py-1 rounded-md uppercase"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+                <!-- Project Preview -->
+                <div
+                  class="w-full flex items-center justify-start overflow-x-auto gap-4"
+                >
+                  <img
+                  ng-repeat="preview in project.previews"
+                    class="w-80 h-56"
+                    src="{{preview.src}}"
+                    alt="{{preview.alt}}"
+                  />
+                  
+                </div>
+              </li>
+            </ul>
+      
+            
+            </script>
+          </section>
+    </section>
 </body>
 </html>

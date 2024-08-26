@@ -6,10 +6,6 @@ app.controller("controller", function ($scope) {
       to: "#",
     },
     {
-      label: "Service",
-      to: "#!Service",
-    },
-    {
       label: "Projects",
       to: "#!Projects",
     },
@@ -105,22 +101,55 @@ app.controller("controller", function ($scope) {
       categories: ["Web App", "Productivity", "Note Taking"],
       link: "#",
       previews: [
-        {
-          src: "./src/assets/projects/notion/Notion.jpg",
-          alt: "Notion Hero Section",
-        },
-        {
-          src: "./src/assets/projects/notion/NotionSignup.jpg",
-          alt: "Notion Signup Page",
-        },
-
-        {
-          src: "./src/assets/projects/notion/NotionTemplate.jpg",
-          alt: "Template Section",
-        },
-      ],
+        { src: "./src/assets/projects/notion/Notion.jpg", alt: "Notion Hero Section" },
+        { src: "./src/assets/projects/notion/NotionSignup.jpg", alt: "Notion Signup Page" },
+        { src: "./src/assets/projects/notion/NotionTemplate.jpg", alt: "Template Section" }
+      ]
     },
-    
+    {
+      label: "E-commerce App",
+      categories: ["Web App", "E-commerce", "Shopping"],
+      link: "#",
+      previews: [
+        { src: "./src/assets/projects/ecommerce/EcommerceHomepage.jpg", alt: "E-commerce Homepage" },
+        { src: "./src/assets/projects/ecommerce/ProductPage.jpg", alt: "Product Page" },
+        { src: "./src/assets/projects/ecommerce/CartPage.jpg", alt: "Cart Page" },
+        { src: "./src/assets/projects/ecommerce/CheckoutPage.jpg", alt: "Checkout Page" }
+      ]
+    },
+    {
+      label: "Social Media Platform",
+      categories: ["Web App", "Social Media", "Networking"],
+      link: "#",
+      previews: [
+        { src: "./src/assets/projects/socialmedia/FeedPage.jpg", alt: "Feed Page" },
+        { src: "./src/assets/projects/socialmedia/ProfilePage.jpg", alt: "Profile Page" },
+        { src: "./src/assets/projects/socialmedia/CreatePost.jpg", alt: "Create Post" },
+        { src: "./src/assets/projects/socialmedia/Messages.jpg", alt: "Messages" }
+      ]
+    },
+    {
+      label: "Music Streaming App",
+      categories: ["Web App", "Music", "Entertainment"],
+      link: "#",
+      previews: [
+        { src: "./src/assets/projects/musicstreaming/HomePage.jpg", alt: "Home Page" },
+        { src: "./src/assets/projects/musicstreaming/SearchPage.jpg", alt: "Search Page" },
+        { src: "./src/assets/projects/musicstreaming/PlaylistPage.jpg", alt: "Playlist Page" },
+        { src: "./src/assets/projects/musicstreaming/PlayerPage.jpg", alt: "Player Page" }
+      ]
+    },
+    {
+      label: "Video Conferencing App",
+      categories: ["Web App", "Communication", "Meetings"],
+      link: "#",
+      previews: [
+        { src: "./src/assets/projects/videoconferencing/MeetingRoom.jpg", alt: "Meeting Room" },
+        { src: "./src/assets/projects/videoconferencing/Participants.jpg", alt: "Participants" },
+        { src: "./src/assets/projects/videoconferencing/ShareScreen.jpg", alt: "Share Screen" },
+        { src: "./src/assets/projects/videoconferencing/Chat.jpg", alt: "Chat" }
+      ]
+    }
   ];
 });
 

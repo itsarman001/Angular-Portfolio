@@ -562,10 +562,6 @@ video {
   isolation: isolate;
 }
 
-.clear-start {
-  clear: inline-start;
-}
-
 .m-2 {
   margin: 0.5rem;
 }
@@ -578,6 +574,20 @@ video {
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mb-2 {
@@ -598,18 +608,6 @@ video {
 
 .mt-\[25\%\] {
   margin-top: 25%;
-}
-
-.mb-0 {
-  margin-bottom: 0px;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
 }
 
 .flex {
@@ -640,6 +638,10 @@ video {
   height: 1.5rem;
 }
 
+.w-4\/5 {
+  width: 80%;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -654,10 +656,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-4\/5 {
-  width: 80%;
 }
 
 .transform {
@@ -714,6 +712,10 @@ video {
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
+.place-self-start {
+  place-self: start;
+}
+
 .overflow-x-auto {
   overflow-x: auto;
 }
@@ -762,6 +764,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -786,6 +793,10 @@ video {
   line-height: 1;
 }
 
+.text-\[2vw\] {
+  font-size: 2vw;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -796,12 +807,12 @@ video {
   line-height: 1.75rem;
 }
 
-.text-\[10vw\] {
-  font-size: 10vw;
+.text-\[5vw\] {
+  font-size: 5vw;
 }
 
-.text-\[2vw\] {
-  font-size: 2vw;
+.text-\[3vw\] {
+  font-size: 3vw;
 }
 
 .uppercase {
@@ -814,10 +825,6 @@ video {
 
 .text-\[\] {
   color: ;
-}
-
-.text-\[10\] {
-  color: 10;
 }
 
 .blur {
@@ -838,6 +845,21 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .lg\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .lg\:mx-24 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
   .lg\:mt-\[5\%\] {
     margin-top: 5%;
   }
@@ -870,9 +892,28 @@ video {
     gap: 1rem;
   }
 
+  .lg\:place-self-start {
+    place-self: start;
+  }
+
   .lg\:py-0\.5 {
     padding-top: 0.125rem;
     padding-bottom: 0.125rem;
+  }
+
+  .lg\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .lg\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .lg\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .lg\:text-2xl {
@@ -888,5 +929,30 @@ video {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-\[2vw\] {
+    font-size: 2vw;
+  }
+
+  .lg\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .lg\:text-\[5vw\] {
+    font-size: 5vw;
+  }
+
+  .lg\:text-\[3vw\] {
+    font-size: 3vw;
+  }
+
+  .lg\:text-\[2\.5vw\] {
+    font-size: 2.5vw;
+  }
+
+  .lg\:text-\[\] {
+    color: ;
   }
 }
